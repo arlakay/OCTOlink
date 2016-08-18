@@ -2,7 +2,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Mendefinisikan button saat di klik -->
-    <item android:drawable="@drawable/architecture_hover"
+    <item android:drawable="@drawable/architecture"
         android:state_pressed="true" />
 
     <!-- Mendefinisikan button saat terfokus -->
@@ -11,4 +11,6 @@
 
     <!-- Mendefinisikan button saat dalam kondisi normal -->
     <item android:drawable="@drawable/architecture" />
+
+
 </selector>

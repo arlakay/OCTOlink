@@ -62,40 +62,40 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        coordinatorLayout = (CoordinatorLayout) findViewById(R.id
-                .coordinatorLayout);
+//        coordinatorLayout = (CoordinatorLayout) findViewById(R.id
+//                .coordinatorLayout);
 
         // Alert Dialog
         alertDialogBuilder = new AlertDialog.Builder(Register.this, R.style.AppCompatAlertDialogStyle);
         alertDialogBuilder.setCancelable(false);
 
-        inputLayoutFirstName = (TextInputLayout) findViewById(R.id.input_layout_first_name);
-        inputLayoutLastName = (TextInputLayout) findViewById(R.id.input_layout_last_name);
+        //inputLayoutFirstName = (TextInputLayout) findViewById(R.id.input_layout_first_name);
+        //inputLayoutLastName = (TextInputLayout) findViewById(R.id.input_layout_last_name);
         inputLayoutPhone = (TextInputLayout) findViewById(R.id.input_layout_phone);
-        inputLayoutEmail = (TextInputLayout) findViewById(R.id.input_layout_email);
+        //inputLayoutEmail = (TextInputLayout) findViewById(R.id.input_layout_email);
         inputLayoutPassword = (TextInputLayout) findViewById(R.id.input_layout_password);
 
-        et_firstName = (EditText)findViewById(R.id.et_first_name);
-        et_lastName = (EditText)findViewById(R.id.et_last_name);
-        et_email = (EditText)findViewById(R.id.et_email);
+        //et_firstName = (EditText)findViewById(R.id.et_first_name);
+        //et_lastName = (EditText)findViewById(R.id.et_last_name);
+        //et_email = (EditText)findViewById(R.id.et_email);
         et_phoneNumber = (EditText)findViewById(R.id.et_phoneNumber);
         et_newPassword = (EditText)findViewById(R.id.et_newPassword);
 
         bt_register = (Button)findViewById(R.id.buttonRegister);
         tv_backToLogin = (TextView)findViewById(R.id.btnLinkToLogin);
 
-        et_firstName.setTypeface(Typeface.DEFAULT);
-        et_lastName.setTypeface(Typeface.DEFAULT);
-        et_email.setTypeface(Typeface.DEFAULT);
+//        et_firstName.setTypeface(Typeface.DEFAULT);
+//        et_lastName.setTypeface(Typeface.DEFAULT);
+//        et_email.setTypeface(Typeface.DEFAULT);
         et_phoneNumber.setTypeface(Typeface.DEFAULT);
         et_newPassword.setTypeface(Typeface.DEFAULT);
 
         et_newPassword.setTransformationMethod(new PasswordTransformationMethod());
 
-        et_firstName.addTextChangedListener(new MyTextWatcher(et_firstName));
-        et_lastName.addTextChangedListener(new MyTextWatcher(et_lastName));
+//        et_firstName.addTextChangedListener(new MyTextWatcher(et_firstName));
+//        et_lastName.addTextChangedListener(new MyTextWatcher(et_lastName));
         et_phoneNumber.addTextChangedListener(new MyTextWatcher(et_phoneNumber));
-        et_email.addTextChangedListener(new MyTextWatcher(et_email));
+//        et_email.addTextChangedListener(new MyTextWatcher(et_email));
         et_newPassword.addTextChangedListener(new MyTextWatcher(et_newPassword));
 
         // Progress dialog
@@ -112,9 +112,9 @@ public class Register extends AppCompatActivity {
         bt_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            firstName = et_firstName.getText().toString();
-                lastName = et_lastName.getText().toString();
-                email = et_email.getText().toString();
+//            firstName = et_firstName.getText().toString();
+//                lastName = et_lastName.getText().toString();
+//                email = et_email.getText().toString();
                 phoneNumber = et_phoneNumber.getText().toString();
                 newPassword = et_newPassword.getText().toString();
 
@@ -236,16 +236,16 @@ public class Register extends AppCompatActivity {
 
     private void registerUser(final String firstName, final String lastName, final String phoneNumber, final String email,
                               final String newPassword) {
-
-        if (!validateFirstName()) {
-            return;
-        }
-        if (!validateLastName()) {
-            return;
-        }
-        if (!validateEmail()) {
-            return;
-        }
+//
+//        if (!validateFirstName()) {
+//            return;
+//        }
+//        if (!validateLastName()) {
+//            return;
+//        }
+//        if (!validateEmail()) {
+//            return;
+//        }
         if (!validatePhone()) {
             return;
         }
@@ -335,9 +335,9 @@ public class Register extends AppCompatActivity {
             protected Map<String, String> getParams() {
                 // Posting params to register url
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("firstname", firstName);
-                params.put("lastname", lastName);
-                params.put("email", email);
+//                params.put("firstname", firstName);
+//                params.put("lastname", lastName);
+//                params.put("email", email);
                 params.put("phone", phoneNumber);
                 params.put("pin", newPassword);
                 return params;
@@ -387,18 +387,18 @@ public class Register extends AppCompatActivity {
 
         public void afterTextChanged(Editable editable) {
             switch (view.getId()) {
-                case R.id.et_first_name:
-                    validateFirstName();
-                    break;
-                case R.id.et_last_name:
-                    validateLastName();
-                    break;
+//                case R.id.et_first_name:
+//                    validateFirstName();
+//                    break;
+//                case R.id.et_last_name:
+//                    validateLastName();
+//                    break;
                 case R.id.et_phoneNumber:
                     validatePhone();
                     break;
-                case R.id.et_email:
-                    validateEmail();
-                    break;
+//                case R.id.et_email:
+//                    validateEmail();
+//                    break;
                 case R.id.et_newPassword:
                     validatePassword();
                     break;

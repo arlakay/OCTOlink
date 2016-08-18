@@ -2,7 +2,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Mendefinisikan button saat di klik -->
-    <item android:drawable="@drawable/health_hover"
+    <item android:drawable="@drawable/health"
         android:state_pressed="true" />
 
     <!-- Mendefinisikan button saat terfokus -->

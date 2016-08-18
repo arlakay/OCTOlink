@@ -43,7 +43,7 @@ public class ImageAdapter extends BaseAdapter {
             DisplayMetrics metrics = mContext.getResources().getDisplayMetrics();
             int width = metrics.widthPixels/2;
             imageView.setLayoutParams(new GridView.LayoutParams(width, width));
-            imageView.setPadding(1, 1, 1, 1);
+            imageView.setPadding(60, 60, 60, 60);
         } else {
             imageView = (ImageView) convertView;
         }

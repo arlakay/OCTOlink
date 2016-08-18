@@ -163,7 +163,7 @@ public class Main2Activity extends AppCompatActivity
                 isInternetPresent = cd.isConnectingToInternet();
 
                 if (isInternetPresent) {
-                    Intent intent = new Intent(Main2Activity.this, CategoryPromo.class);
+                    Intent intent = new Intent(Main2Activity.this, CategoryPromo2.class);
                     intent.putExtra("cid", cid);
                     startActivity(intent);
                 } else {
