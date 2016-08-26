@@ -22,6 +22,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -48,6 +49,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import id.co.octolink.R;
+import id.co.octolink.model.History2;
 import id.co.octolink.service.GeofenceErrorMessages;
 import id.co.octolink.service.GeofenceTransitionsIntentService;
 import id.co.octolink.singleton.AppController;
@@ -114,8 +116,29 @@ public class Main2Activity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         View header=navigationView.getHeaderView(0);
 
+
         TextView txtActiveUserName = (TextView)header.findViewById(R.id.txt_ActiveUserLogin);
         txtActiveUserName.setText(fname + " " + lname);
+        txtActiveUserName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Main2Activity.this, ProfileActivity.class);
+                i.putExtra("fullname", fname + " " + lname);
+                i.putExtra("image_url", R.drawable.photo);
+                startActivity(i);
+            }
+        });
+        ImageView imgActiveUserName = (ImageView)header.findViewById(R.id.imageView);
+        imgActiveUserName.setImageResource(R.drawable.photo);
+        imgActiveUserName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Main2Activity.this, ProfileActivity.class);
+                i.putExtra("fullname", fname + " " + lname);
+                i.putExtra("image_url",R.drawable.photo);
+                startActivity(i);
+            }
+        });
 
         findViewById(R.id.sale).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -145,7 +168,7 @@ public class Main2Activity extends AppCompatActivity
                 isInternetPresent = cd.isConnectingToInternet();
 
                 if (isInternetPresent) {
-                    Intent intent = new Intent(Main2Activity.this, History.class);
+                    Intent intent = new Intent(Main2Activity.this, History2Activity.class);
                     intent.putExtra("cid", cid);
                     startActivity(intent);
                 } else {
@@ -199,7 +222,7 @@ public class Main2Activity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.nav_camara) {
+        if (id == R.id.nav_signout) {
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
 
             alertDialogBuilder.setMessage("Are you sure?");

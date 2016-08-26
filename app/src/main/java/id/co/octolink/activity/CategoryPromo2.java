@@ -42,7 +42,7 @@ public class CategoryPromo2 extends AppCompatActivity {
                 isInternetPresent = cd.isConnectingToInternet();
 
                 if (isInternetPresent) {
-                    Intent i = new Intent(CategoryPromo2.this, PromoActivity.class);
+                    Intent i = new Intent(CategoryPromo2.this, Merchant2Activity.class);
                     i.putExtra("id", 0);
                     startActivity(i);
                 } else {
@@ -61,7 +61,7 @@ public class CategoryPromo2 extends AppCompatActivity {
                 isInternetPresent = cd.isConnectingToInternet();
 
                 if (isInternetPresent) {
-                    Intent i = new Intent(CategoryPromo2.this, PromoActivity.class);
+                    Intent i = new Intent(CategoryPromo2.this, Merchant2Activity.class);
                     i.putExtra("id", 1);
                     startActivity(i);
                 } else {
@@ -80,7 +80,7 @@ public class CategoryPromo2 extends AppCompatActivity {
                 isInternetPresent = cd.isConnectingToInternet();
 
                 if (isInternetPresent) {
-                    Intent i = new Intent(CategoryPromo2.this, PromoActivity.class);
+                    Intent i = new Intent(CategoryPromo2.this, Merchant2Activity.class);
                     i.putExtra("id", 2);
                     startActivity(i);
                 } else {
@@ -98,7 +98,7 @@ public class CategoryPromo2 extends AppCompatActivity {
                 isInternetPresent = cd.isConnectingToInternet();
 
                 if (isInternetPresent) {
-                    Intent i = new Intent(CategoryPromo2.this, PromoActivity.class);
+                    Intent i = new Intent(CategoryPromo2.this, Merchant2Activity.class);
                     i.putExtra("id", 4);
                     startActivity(i);
                 } else {
@@ -116,7 +116,7 @@ public class CategoryPromo2 extends AppCompatActivity {
                 isInternetPresent = cd.isConnectingToInternet();
 
                 if (isInternetPresent) {
-                    Intent i = new Intent(CategoryPromo2.this, PromoActivity.class);
+                    Intent i = new Intent(CategoryPromo2.this, Merchant2Activity.class);
                     i.putExtra("id", 4);
                     startActivity(i);
                 } else {
@@ -134,7 +134,7 @@ public class CategoryPromo2 extends AppCompatActivity {
                 isInternetPresent = cd.isConnectingToInternet();
 
                 if (isInternetPresent) {
-                    Intent i = new Intent(CategoryPromo2.this, PromoActivity.class);
+                    Intent i = new Intent(CategoryPromo2.this, Merchant2Activity.class);
                     i.putExtra("id", 5);
                     startActivity(i);
                 } else {
