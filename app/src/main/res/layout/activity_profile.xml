@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="id.co.octolink.activity.ProfileActivity">
+    tools:context=".loyaltysystem.mainmenu.navdrawer.ProfileActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_height="wrap_content"
         android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            >
+            android:background="?attr/colorPrimary" >
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_centerHorizontal="true"
@@ -28,7 +29,6 @@
                     android:background="@drawable/logo_apps_dark"/>
 
             </RelativeLayout>
-
 
         </android.support.v7.widget.Toolbar>
 
@@ -50,21 +50,25 @@
                 android:layout_width="wrap_content"
                 android:elevation="5dp"
                 card_view:cardBackgroundColor="#fff">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="230dp"
                         android:id="@+id/credit_card_image_view"
                         android:layout_margin="10dp"
                         android:background="@drawable/creditcard"/>
+
                     <ImageView
                         android:layout_width="80dp"
                         android:id="@+id/credit_card_photo"
                         android:layout_marginLeft="50dp"
                         android:layout_marginTop="40dp"
                         android:layout_height="80dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -74,6 +78,7 @@
                         android:id="@+id/credit_card_name"
                         android:textColor="@color/white"
                         android:text="FULL NAME"/>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -84,9 +89,10 @@
                         android:textSize="30dp"
                         android:textColor="@color/white"
                         android:text="0000 000 000 00"/>
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
 
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -96,9 +102,7 @@
                 android:textColor="#000000"
                 android:layout_margin="10dp"
                 android:layout_below="@+id/credit_card_card_view"
-                android:layout_centerHorizontal="true"
-                />
-
+                android:layout_centerHorizontal="true" />
 
             <android.support.v7.widget.CardView
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -108,10 +112,12 @@
                 android:elevation="5dp"
                 android:layout_below="@+id/account_tv"
                 card_view:cardBackgroundColor="#fff">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:id="@+id/edit_profile_lr"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:layout_width="5dp"
                         android:layout_height="20dp"
@@ -120,6 +126,7 @@
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
                         android:layout_weight="1"/>
+
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -128,6 +135,7 @@
                         android:layout_marginTop="6dp"
                         android:textSize="15sp"
                         android:textStyle="bold"/>
+
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -140,10 +148,12 @@
                 android:elevation="5dp"
                 android:layout_below="@+id/edit_profile_card_view"
                 card_view:cardBackgroundColor="#fff">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:id="@+id/location_preference_lr"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:layout_width="5dp"
                         android:layout_height="20dp"
@@ -152,6 +162,7 @@
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
                         android:layout_weight="1"/>
+
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -160,6 +171,7 @@
                         android:layout_marginTop="6dp"
                         android:textSize="15sp"
                         android:textStyle="bold"/>
+
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -172,8 +184,7 @@
                 android:textColor="#000000"
                 android:layout_margin="10dp"
                 android:layout_below="@+id/location_preference_card_view"
-                android:layout_centerHorizontal="true"
-                />
+                android:layout_centerHorizontal="true" />
 
             <android.support.v7.widget.CardView
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -183,10 +194,12 @@
                 android:elevation="5dp"
                 android:layout_below="@+id/settings_tv"
                 card_view:cardBackgroundColor="#fff">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:id="@+id/notification_lr"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:layout_width="5dp"
                         android:layout_height="20dp"
@@ -195,6 +208,7 @@
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
                         android:layout_weight="1"/>
+
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -203,10 +217,12 @@
                         android:layout_marginTop="6dp"
                         android:textSize="15sp"
                         android:textStyle="bold"/>
+
                     <Switch
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="20dp"/>
+
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -219,10 +235,12 @@
                 android:elevation="5dp"
                 android:layout_below="@+id/notification_card_view"
                 card_view:cardBackgroundColor="#fff">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:id="@+id/log_out_lr"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:layout_width="5dp"
                         android:layout_height="20dp"
@@ -231,6 +249,7 @@
                         android:layout_marginLeft="12dp"
                         android:layout_marginRight="15dp"
                         android:layout_weight="1"/>
+
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -239,10 +258,13 @@
                         android:layout_marginTop="6dp"
                         android:textSize="15sp"
                         android:textStyle="bold"/>
+
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
+
         </RelativeLayout>
+
     </ScrollView>
 
 </RelativeLayout>

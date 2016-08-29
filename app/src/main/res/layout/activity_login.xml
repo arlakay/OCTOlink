@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:background="#eeeeee"
-    tools:context=".activity.LoginActivity">
+    tools:context=".loyaltysystem.login.LoginActivity">
 
     <ImageView
         android:id="@+id/imageButton"
@@ -55,7 +55,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <EditText android:id="@+id/password"
+                <EditText
+                    android:id="@+id/password"
                     android:typeface="normal"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"

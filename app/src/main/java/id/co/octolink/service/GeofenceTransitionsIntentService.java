@@ -20,14 +20,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import id.co.octolink.R;
-import id.co.octolink.activity.Main2Activity;
+import id.co.octolink.loyaltysystem.mainmenu.Main2Activity;
 import id.co.octolink.utils.Constants;
 
 /**
  * Created by ILM on 4/27/2016.
  */
 public class GeofenceTransitionsIntentService extends IntentService {
-    protected static final String TAG = "geofence-transitions-service";
+    protected static final String TAG = GeofenceTransitionsIntentService.class.getSimpleName();
 
     public GeofenceTransitionsIntentService() {
         // Use the TAG to name the worker thread.

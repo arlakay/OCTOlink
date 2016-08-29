@@ -164,4 +164,8 @@
         Geofence transition error: invalid transition type %1$d
     </string>
     <string name="geofence_transition_notification_text">Click notification to return to app</string>
+    <string name="detail_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis purus mollis, bibendum arcu nec, interdum neque. Morbi ipsum urna.</string>
+    <string name="fooddrink">Food &amp; Drinks</string>
+    <string name="detail_sk">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis purus mollis, bibendum arcu nec, interdum neque. Morbi ipsum urna.</string>
+
 </resources>

@@ -3,11 +3,10 @@ package id.co.octolink.utils;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.util.Log;
 
 import java.util.HashMap;
 
-import id.co.octolink.activity.LoginActivity;
+import id.co.octolink.loyaltysystem.login.LoginActivity;
 
 /**
  * Created by E.R.D on 4/2/2016.
